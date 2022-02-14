@@ -1,23 +1,15 @@
 <template>
   <section id="home" ref="home">
 
-<!--    <img id="banner" alt="banner" src="@/assets/img/german_faller_banner.webp">-->
-<!--    <img id="banner-cover" alt="banner_cover" src="@/assets/img/german_faller_banner_cover.svg">-->
+    <img id="background_1" alt="background_1" src="@/assets/img/hibiscus_background_1.svg">
 
-<!--    <div class="container">-->
-<!--      <div class="logo">-->
-<!--        <img alt="GF-logo" src="@/assets/img/german_faller_circle.svg" :style="styleLogo">-->
-<!--        <div class="slogan" :style="styleSlogan">-->
-<!--          <span class="line">I MAKE</span>-->
-<!--          <span class="line">THINGS</span>-->
-<!--          <span class="line">HAPPEN</span>-->
-<!--        </div>-->
-<!--      </div>-->
 
-<!--      <img id="moon" alt="moon" src="@/assets/img/german_faller_moon.png" :style="styleMoon">-->
-<!--      <img id="astronaut" alt="astronaut" src="@/assets/img/german_faller_astronaut_1.png" :style="styleAstronaut">-->
+    <div class="container content">
+        <p>We are a human center software products developer team.</p>
+        <p>Tell us about your goals and lets the journey together to make them real!</p>
+        <nuxt-link class="btn-contact" :to="{ path: '/', hash:'#contact'}">Contact us</nuxt-link>
+    </div>
 
-<!--    </div>-->
   </section>
 </template>
 
@@ -81,8 +73,10 @@ export default {
 
 <style scoped lang="scss">
 #home {
+  background-color: #1E1E1E;
+  color: #FFF;
 
-  #banner, #banner-cover {
+  #background_1 {
     position: absolute;
     top: 0;
     height: 100%;
@@ -90,99 +84,44 @@ export default {
     object-fit: cover;
   }
 
-  #banner-cover {
-    opacity: 0.6;
-  }
-
-  .logo {
-    $logo-size: 20rem;
-    width: $logo-size;
-    height: $logo-size;
-    margin: 45% auto 4rem;
-
+  .content {
     position: relative;
-    user-select: none;
 
-    img {
-      height: 100%;
-      width: 100%;
+    margin-top: 15rem;
+    padding: 1rem 3rem 1rem 1rem;
+
+    p {
+      font-size: 2rem;
+      margin-bottom: 4rem;
     }
 
-    .slogan {
+    .btn-contact {
+      padding: 1rem 6rem;
+      margin: 1rem;
+      border-radius: 4rem;
+      background: linear-gradient(275.68deg, #FF1744 -54.94%, #FF1744 -14.15%, #FF616F 34.87%, #5CC6AC 105.61%, #00FFCF 144.78%);
+      color: #FFFFFF;
+      text-decoration: none;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+
+    #background_1 {
       position: absolute;
-      top: 8.7rem;
-      left: 12.5rem;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      //object-fit: cover;
+    }
 
-      .line {
-        font-size: 2.5rem;
-        line-height: 3.5rem;
-
-        white-space: pre;
-
-        //&:nth-child(2) {
-        //  margin-top: 3rem;
-        //}
-        //&:nth-child(3) {
-        //  margin-top: 2rem;
-        //}
+    .content{
+      p{
+        width: 50%;
       }
     }
   }
-
-
-  #moon {
-    position: absolute;
-    width: 8rem;
-    height: 8rem;
-    right: 4rem;
-    top: 6rem;
-
-    animation: moveM 10s infinite linear 2s;
-  }
-
-  #astronaut {
-    position: absolute;
-    width: 10rem;
-    height: 10rem;
-    left: 4rem;
-    bottom: 5rem;
-
-    animation: moveA 10s infinite linear 2s;
-  }
-
-  @keyframes moveA {
-    0% { transform: rotate(15deg) translateX(-25%) translateY(0px);}
-    25% { transform: rotate(0deg) translateX(0px) translateY(25%);}
-    50% { transform: rotate(-15deg) translateX(25%) translateY(0px);}
-    75% { transform: rotate(0deg) translateX(0px) translateY(25%);}
-    100% { transform: rotate(15deg) translateX(-25%) translateY(0px);}
-  }
-
-  @keyframes moveM {
-    0% { transform: rotate(-15deg) translateX(25%) translateY(0px);}
-    25% { transform: rotate(0deg) translateX(0px) translateY(25%);}
-    50% { transform: rotate(15deg) translateX(-25%) translateY(0px);}
-    75% { transform: rotate(0deg) translateX(0px) translateY(25%);}
-    100% { transform: rotate(-15deg) translateX(25%) translateY(0px);}
-  }
-
-  @media (min-width: 768px) {
-    //Small screens, laptops
-
-    .logo {
-      margin-top: 14rem;
-    }
-
-    #moon {
-      right: 2rem;
-      top: 12rem;
-    }
-
-    #astronaut {
-      left: 6rem;
-      bottom: 12rem;
-    }
-  }
-
 }
 </style>
