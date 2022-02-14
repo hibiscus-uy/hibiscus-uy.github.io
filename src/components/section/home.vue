@@ -6,7 +6,7 @@
 
     <div class="container content">
         <p>We are a human center software products developer team.</p>
-        <p>Tell us about your goals and lets the journey together to make them real!</p>
+        <p>Tell us about your goals and lets take the journey together to make them real!</p>
         <nuxt-link class="btn-contact" :to="{ path: '/', hash:'#contact'}">Contact us</nuxt-link>
     </div>
 
@@ -92,12 +92,16 @@ export default {
 
     p {
       font-size: 2rem;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
+      font-weight: 300;
+
+      &:first-child{
+        font-weight: 700;
+      }
     }
 
     .btn-contact {
       padding: 1rem 6rem;
-      margin: 1rem;
       border-radius: 4rem;
       background: linear-gradient(275.68deg, #FF1744 -54.94%, #FF1744 -14.15%, #FF616F 34.87%, #5CC6AC 105.61%, #00FFCF 144.78%);
       color: #FFFFFF;
