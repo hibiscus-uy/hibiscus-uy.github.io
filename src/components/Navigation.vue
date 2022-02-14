@@ -1,7 +1,7 @@
 <template>
   <nav :class="{'fade-in':!faded,'responsive':menuExpanded}">
     <div class="menu">
-      <img class="logo" alt="hibiscus_menu_icon" src="@/assets/img/hibiscus_logo_dark_s.png">
+      <img class="logo" alt="hibiscus_menu_icon" src="@/assets/img/hibiscus_logo_dark.svg">
       <a href="javascript:void(0);" class="icon" @click="menu">
         <img alt="hibiscus_menu_icon" src="@/assets/img/hibiscus_menu_icon.svg">
       </a>
@@ -56,6 +56,9 @@ nav {
 
   a {
     display: none;
+  }
+  .logo{
+    height: 6rem;
   }
 
   .icon {
