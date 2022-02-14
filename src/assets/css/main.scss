@@ -9,14 +9,14 @@
 
   &::selection {
     background-color: #FFF;
-    color: #000;
+    color: #1E1E1E;
   }
 }
 
 body, html{
   height: 100%;
-  background-color: #000;
-  color: #000;
+  background-color: #1E1E1E;
+  color: #FFF;
   margin: 0;
 
   &::-webkit-scrollbar {

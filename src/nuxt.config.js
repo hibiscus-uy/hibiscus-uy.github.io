@@ -90,6 +90,8 @@ gtag('config', 'G-MND0S9FGM9');`
   build: {
   },
 
+  generate: { fallback: '404.html' },
+
   server: {
     host: "0.0.0.0"
   },
