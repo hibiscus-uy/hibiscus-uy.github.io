@@ -5,7 +5,7 @@
 
 
     <div class="container content">
-        <p>We are a human-centred software products developer team.</p>
+        <p>We are a human-centered software products developer team.</p>
         <p>Tell us about your goals and lets take the journey together to make them real!</p>
         <nuxt-link class="btn-contact" :to="{ path: '/', hash:'#contact'}">Contact us</nuxt-link>
     </div>
