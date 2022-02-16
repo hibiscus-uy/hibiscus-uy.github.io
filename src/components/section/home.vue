@@ -5,7 +5,7 @@
 
 
     <div class="container content">
-        <p>We are a human center software products developer team.</p>
+        <p>We are a human-centred software products developer team.</p>
         <p>Tell us about your goals and lets take the journey together to make them real!</p>
         <nuxt-link class="btn-contact" :to="{ path: '/', hash:'#contact'}">Contact us</nuxt-link>
     </div>
@@ -19,54 +19,13 @@ const delta = 20;
 export default {
   name: "home",
   computed:{
-    styleLogo() {
-      const x = (this.x + window.innerWidth) / -200
-      const y = (this.y + window.innerHeight) / -200
-
-      return `transform: translateX(${x}px) translateY(${y}px);`
-    },
-    styleSlogan() {
-      const x = (this.x - window.innerWidth) / 200
-      const y = (this.y - window.innerHeight) / 200
-
-      return `transform: translateX(${x}px) translateY(${y}px);`
-    },
-    styleAstronaut() {
-      const x = 4 + this.x / 200
-      const y = 5 + this.y / -200
-
-      return `left: ${x}rem; bottom:${y}rem;`
-    },
-    styleMoon() {
-      const x = 2 + this.x / 200
-      const y = 12 + this.y / -200
-
-      return `right: ${x}rem; top:${y}rem;`
-    }
   },
   data() {
     return {
-      x: null,
-      y: null
     }
   },
   mounted() {
-    this.$refs.home.addEventListener('mousemove', function (e) {
-      this.move(e.x, e.y, null)
-    }.bind(this),true)
-
-    window.addEventListener('deviceorientation', function (e) {
-      const x = (e.alpha + 180) % 360 * 2
-      const y = (e.beta + e.gamma) * 5
-
-      this.move(x, y)
-    }.bind(this), true)
-
   }, methods: {
-    move(x, y) {
-      this.x = x
-      this.y = y
-    }
   }
 }
 </script>
