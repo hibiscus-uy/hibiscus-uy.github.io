@@ -1,22 +1,24 @@
 <template>
   <section id="contact">
-<!--    <img id="banner-cover" alt="banner_cover" src="@/assets/img/german_faller_banner_cover.svg">-->
 
-<!--    <div class="title">-->
-<!--      <div class="container">-->
-<!--        <h2>WANNA TALK?</h2>-->
-<!--      </div>-->
-<!--    </div>-->
+    <img id="hibiscus_background_2" alt="hibiscus_background_2" src="@/assets/img/hibiscus_background_2.svg">
+    <div class="title">
+      <p>Lets create together</p>
 
-<!--    <div class="container content">-->
-<!--      <div class="form">-->
-<!--        <input v-model="name" placeholder="Name" name="name" type="text">-->
-<!--        <input v-model="mail" placeholder="e-mail" name="email" type="email">-->
-<!--        <textarea v-model="msg" placeholder="Message"/>-->
-<!--        <button @click="submit">LET´S TALK</button>-->
-<!--      </div>-->
-<!--      <img id="astronauts" alt="astronauts" src="@/assets/img/german_faller_astronauts.svg">-->
-<!--    </div>-->
+      <p>Contact us</p>
+    </div>
+
+
+    <div class="container content">
+      <div class="form">
+        <input v-model="name" placeholder="Name" name="name" type="text">
+        <input v-model="mail" placeholder="e-mail" name="email" type="email">
+        <textarea v-model="msg" placeholder="Message"/>
+        <div class="right">
+          <button @click="submit">Send</button>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -46,38 +48,37 @@ export default {
 
 <style lang="scss" scoped>
 #contact {
-  #banner-cover {
+  background-color: #FFFFFF;
+  color: #000000;
+
+  #hibiscus_background_2 {
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
-
-    opacity: 0.6;
-    z-index: -1;
   }
 
   .title {
-    //background-color: #002C23;
-    color: #FFFFFF;
+    position: relative;
+    text-align: center;
 
-    .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 1.5rem;
+    p {
+      font-size: 1.5rem;
+      line-height: 4rem;
+      font-style: normal;
+      font-weight: normal;
+      margin: 0;
+    }
 
-      h2 {
-        display: inline-block;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      }
+    p + p {
+      font-size: 3rem;
+      margin-bottom: 5rem;
     }
   }
 
   .content {
-    display: flex;
-    flex-direction: column;
+    position: relative;
     padding-right: 5rem;
     padding-left: 5rem;
 
@@ -85,50 +86,127 @@ export default {
       display: flex;
       flex-direction: column;
 
-      button {
-        margin-top: 1rem;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border: 1px solid #002C23;
-        background-color: #FFFFFF;
-        color: #002C23;
-        text-decoration: none;
-        text-align: center;
-        cursor: pointer;
-
-        &:hover {
-          background-color: #002C23;
-          color: #FFFFFF;
-          border-color: #FFFFFF;
-        }
-      }
-
       textarea {
         resize: vertical;
         height: 10rem;
       }
 
-      textarea, input {
-        padding: 1rem;
-        border: 1px solid #002C23;
-        color: #002C23;
-        font-size: 1rem;
+      input {
+        margin-bottom: 1rem;
 
-        &:focus-visible {
-          outline: #00FFCE solid 1px;
-          outline-offset: -1px;
+        &:first-child{
+          border-radius: 1rem 0 0 0;
         }
       }
 
-      :nth-child(1) {
-        border-radius: 0.5rem 0.5rem 0 0;
+      textarea, input {
+        padding: 1rem;
+        border: 1px solid #00FFCF;
+        background: rgba(0, 0, 0, 0.9);
+        color: #00FFCF;
+        font-size: 1rem;
+
+        &:focus-visible {
+          outline: #FF1744 solid 2px;
+          outline-offset: -2px;
+        }
+
+        &::placeholder {
+          color: #00FFCF80;
+          opacity: 1; /* Firefox */
+        }
       }
 
-      :nth-child(3) {
-        border-radius: 0 0 0.5rem 0.5rem;
+      .right {
+        text-align: right;
+
+        button{
+          padding: 0.5rem;
+          width: 10rem;
+          background: #00FFCF;
+          border: none;
+          border-radius: 0 0 1rem 1rem;
+          font-size: 1rem;
+          font-weight: 500;
+        }
       }
+
     }
   }
+
+  //
+  //.title {
+  //  //background-color: #002C23;
+  //  color: #FFFFFF;
+  //
+  //  .container {
+  //    display: flex;
+  //    justify-content: space-between;
+  //    align-items: center;
+  //    padding: 0 1.5rem;
+  //
+  //    h2 {
+  //      display: inline-block;
+  //      margin-top: 2rem;
+  //      margin-bottom: 2rem;
+  //    }
+  //  }
+  //}
+  //
+  //.content {
+  //  display: flex;
+  //  flex-direction: column;
+  //  padding-right: 5rem;
+  //  padding-left: 5rem;
+  //
+  //  .form {
+  //    display: flex;
+  //    flex-direction: column;
+  //
+  //    button {
+  //      margin-top: 1rem;
+  //      padding: 1rem;
+  //      border-radius: 0.5rem;
+  //      border: 1px solid #002C23;
+  //      background-color: #FFFFFF;
+  //      color: #002C23;
+  //      text-decoration: none;
+  //      text-align: center;
+  //      cursor: pointer;
+  //
+  //      &:hover {
+  //        background-color: #002C23;
+  //        color: #FFFFFF;
+  //        border-color: #FFFFFF;
+  //      }
+  //    }
+  //
+  //    textarea {
+  //      resize: vertical;
+  //      height: 10rem;
+  //    }
+  //
+  //    textarea, input {
+  //      padding: 1rem;
+  //      border: 1px solid #002C23;
+  //      color: #002C23;
+  //      font-size: 1rem;
+  //
+  //      &:focus-visible {
+  //        outline: #00FFCE solid 1px;
+  //        outline-offset: -1px;
+  //      }
+  //    }
+  //
+  //    :nth-child(1) {
+  //      border-radius: 0.5rem 0.5rem 0 0;
+  //    }
+  //
+  //    :nth-child(3) {
+  //      border-radius: 0 0 0.5rem 0.5rem;
+  //    }
+  //  }
+  //}
 
 
   @media (min-width: 768px) {

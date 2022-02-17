@@ -1,11 +1,11 @@
 <template>
   <div>
-        <Navigation/>
-        <section-home/>
+    <Navigation/>
+    <section-home/>
     <!--    <section-about/>-->
     <!--        <section-skills/>-->
     <!--        <section-experience/>-->
-    <!--    <section-contact/>-->
+    <section-contact/>
     <my-footer/>
   </div>
 </template>
