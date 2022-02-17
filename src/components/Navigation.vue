@@ -3,7 +3,8 @@
     <div class="menu">
       <img class="logo" alt="hibiscus_menu_icon" src="@/assets/img/hibiscus_logo_dark.svg">
       <a href="javascript:void(0);" class="icon" @click="menu">
-        <img alt="hibiscus_menu_icon" src="@/assets/img/hibiscus_menu_icon.svg">
+        <img v-if="menuExpanded" alt="hibiscus_menu_close_icon" src="@/assets/img/hibiscus_menu_close_icon.svg">
+        <img v-else alt="hibiscus_menu_icon" src="@/assets/img/hibiscus_menu_icon.svg">
       </a>
       <nuxt-link @click.native='handler' :class="{'active':$route.hash==='#home'}" :to="{ path: '/', hash:'#home'}">Home</nuxt-link>
       <nuxt-link @click.native='handler' :class="{'active':$route.hash==='#services'}" :to="{ path: '/', hash:'#services'}">Services</nuxt-link>
