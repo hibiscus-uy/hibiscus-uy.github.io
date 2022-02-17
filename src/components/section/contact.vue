@@ -34,7 +34,7 @@ export default {
   }, methods: {
     submit() {
       const data = {name: this.name, _replyto: this.mail, message: this.msg}
-      this.$axios.post(`https://formspree.io/f/xjvlglwy`, data)
+      this.$axios.post(`https://formspree.io/f/meqngzzd`, data)
         .then(this.clear)
     },
     clear() {
