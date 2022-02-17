@@ -1,5 +1,5 @@
 <template>
-  <nav :class="{'fade-in':!faded,'responsive':menuExpanded}">
+  <nav :class="{'responsive':menuExpanded}">
     <div class="menu">
       <img class="logo" alt="hibiscus_menu_icon" src="@/assets/img/hibiscus_logo_dark.svg">
       <a href="javascript:void(0);" class="icon" @click="menu">
@@ -23,11 +23,7 @@ export default {
       menuExpanded: false
     }
   },
-  computed: {
-    faded() {
-      return this.scroll > 70
-    }
-  },
+  computed: { },
   beforeMount() {
     window.addEventListener('scroll', this.handleScroll)
   },
@@ -111,10 +107,6 @@ nav {
     .logo,
     .icon {
       display: none;
-    }
-
-    &.fade-in {
-      top: 6rem;
     }
 
     .menu{
