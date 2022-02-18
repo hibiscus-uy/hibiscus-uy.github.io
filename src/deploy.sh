@@ -9,3 +9,4 @@ echo hibiscus.sec.uy > docs/CNAME
 cp -rT src/dist docs/
 git add .
 git commit -m "Deploy"
+git push

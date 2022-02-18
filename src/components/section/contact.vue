@@ -96,6 +96,10 @@ export default {
 
         &:first-child{
           border-radius: 1rem 0 0 0;
+
+          &:focus-visible {
+            border-radius: 1rem 0 0 0;
+          }
         }
       }
 
@@ -120,7 +124,7 @@ export default {
       .right {
         text-align: right;
 
-        button{
+        button {
           padding: 0.5rem;
           width: 10rem;
           background: #00FFCF;
@@ -128,6 +132,15 @@ export default {
           border-radius: 0 0 1rem 1rem;
           font-size: 1rem;
           font-weight: 500;
+
+          cursor: pointer;
+
+          &:active,
+          &:hover {
+            background: linear-gradient(275.68deg, #FF1744 -54.94%, #FF1744 -14.15%, #FF616F 34.87%, #5CC6AC 105.61%, #00FFCF 144.78%);
+            color: #FFFFFF;
+            border-color: #FFFFFF;
+          }
         }
       }
 
