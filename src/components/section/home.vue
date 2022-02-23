@@ -74,10 +74,9 @@ export default {
 
     #background_1 {
       position: absolute;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      //object-fit: cover;
+      left: 30%;
+      height: 60rem;
+      width: auto;
     }
 
     .content{

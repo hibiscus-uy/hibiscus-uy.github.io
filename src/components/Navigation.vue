@@ -1,10 +1,11 @@
 <template>
-  <nav :class="{'responsive':menuExpanded}">
+  <nav :class="{'fade-in':!faded,'responsive':menuExpanded}">
     <div class="menu">
-      <img class="logo" alt="hibiscus_menu_icon" src="@/assets/img/hibiscus_logo_dark.svg">
+      <img v-if="light" class="logo" alt="hibiscus_menu_icon" src="@/assets/img/hibiscus_logo_light.svg">
+      <img v-else       class="logo" alt="hibiscus_menu_icon" src="@/assets/img/hibiscus_logo_dark.svg">
       <a href="javascript:void(0);" class="icon" @click="menu">
         <img v-if="menuExpanded" alt="hibiscus_menu_close_icon" src="@/assets/img/hibiscus_menu_close_icon.svg">
-        <img v-else alt="hibiscus_menu_icon" src="@/assets/img/hibiscus_menu_icon.svg">
+        <img v-else alt="hibiscus_menu_icon" :class="{'light':light}" src="@/assets/img/hibiscus_menu_icon.svg">
       </a>
       <nuxt-link @click.native='handler' :class="{'active':$route.hash==='#home'}" :to="{ path: '/', hash:'#home'}">Home</nuxt-link>
       <nuxt-link @click.native='handler' :class="{'active':$route.hash==='#services'}" :to="{ path: '/', hash:'#services'}">Services</nuxt-link>
@@ -24,7 +25,10 @@ export default {
       menuExpanded: false
     }
   },
-  computed: { },
+  computed: {
+    faded() { return this.scroll > 70 },
+    light() { return this.scroll > 350 }
+  },
   beforeMount() {
     window.addEventListener('scroll', this.handleScroll)
   },
@@ -96,10 +100,15 @@ nav {
       font-size: 3rem;
     }
   }
+
+  .icon img.light {
+    filter: invert(100%);
+  }
 }
 
 @media screen and (min-width: 768px) {
   nav {
+    top: -10rem;
 
     a {
       display: inline-block;
@@ -108,6 +117,10 @@ nav {
     .logo,
     .icon {
       display: none;
+    }
+
+    &.fade-in {
+      top: 0;
     }
 
     .menu{

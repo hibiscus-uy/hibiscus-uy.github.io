@@ -49,6 +49,11 @@ footer{
   }
   .msg{
     font-size: 0.8rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 11rem;
   }
 }
 </style>

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import "normalize.css";
 @import "responsive.scss";
 
 *{
@@ -67,7 +68,7 @@ nav {
   left: 0;
   z-index: 1030;
 
-  transition: all .4s ease;
+  transition: all .6s ease;
 }
 
 nav{
@@ -107,6 +108,7 @@ section{
   position: relative;
   min-height: 95vh;
   padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   overflow: hidden;
 
 
