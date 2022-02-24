@@ -1,7 +1,7 @@
 <template>
   <nav :class="{'fade-in':!faded,'responsive':menuExpanded}">
-    <div class="menu">
-      <img v-if="light" class="logo" alt="hibiscus_menu_icon" src="@/assets/img/hibiscus_logo_light.svg">
+    <div class="menu" :class="{'light':light & !menuExpanded}">
+      <img v-if="light & !menuExpanded" class="logo" alt="hibiscus_menu_icon" src="@/assets/img/hibiscus_logo_light.svg">
       <img v-else       class="logo" alt="hibiscus_menu_icon" src="@/assets/img/hibiscus_logo_dark.svg">
       <a href="javascript:void(0);" class="icon" @click="menu">
         <img v-if="menuExpanded" alt="hibiscus_menu_close_icon" src="@/assets/img/hibiscus_menu_close_icon.svg">
@@ -27,7 +27,7 @@ export default {
   },
   computed: {
     faded() { return this.scroll > 70 },
-    light() { return this.scroll > 350 }
+    light() { return this.scroll > 70 }
   },
   beforeMount() {
     window.addEventListener('scroll', this.handleScroll)
@@ -73,7 +73,11 @@ nav {
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
-    padding: 2rem;
+    padding: 0 2rem;
+
+    &.light{
+      background-color: #FFF;
+    }
   }
 }
 
