@@ -94,7 +94,7 @@ export default {
       input {
         margin-bottom: 1rem;
 
-        &:first-child{
+        &[name="name"]{
           border-radius: 1rem 0 0 0;
 
           &:focus-visible {
