@@ -2,7 +2,7 @@
   <div>
     <Navigation/>
     <section-home/>
-    <!--    <section-about/>-->
+    <section-services/>
     <!--        <section-skills/>-->
     <!--        <section-experience/>-->
     <section-contact/>
