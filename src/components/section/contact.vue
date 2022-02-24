@@ -122,7 +122,7 @@ export default {
           opacity: 1; /* Firefox */
         }
 
-        &::selection{
+        &::selection {
           color: #00FFCF;
           background: #FF174580;
         }

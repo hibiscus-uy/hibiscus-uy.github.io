@@ -74,7 +74,8 @@ export default {
 
   .container {
     text-align: center;
-    p{
+
+    p {
       padding: 0 3rem;
     }
 
@@ -87,6 +88,10 @@ export default {
         flex-direction: column;
         align-items: center;
         padding: 3rem;
+
+        p {
+          padding: 0;
+        }
 
         .profile-pic {
           border-radius: 100%;
