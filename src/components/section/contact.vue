@@ -94,7 +94,7 @@ export default {
       input {
         margin-bottom: 1rem;
 
-        &[name="name"]{
+        &[name="name"] {
           border-radius: 1rem 0 0 0;
 
           &:focus-visible {
@@ -146,81 +146,6 @@ export default {
 
     }
   }
-
-  //
-  //.title {
-  //  //background-color: #002C23;
-  //  color: #FFFFFF;
-  //
-  //  .container {
-  //    display: flex;
-  //    justify-content: space-between;
-  //    align-items: center;
-  //    padding: 0 1.5rem;
-  //
-  //    h2 {
-  //      display: inline-block;
-  //      margin-top: 2rem;
-  //      margin-bottom: 2rem;
-  //    }
-  //  }
-  //}
-  //
-  //.content {
-  //  display: flex;
-  //  flex-direction: column;
-  //  padding-right: 5rem;
-  //  padding-left: 5rem;
-  //
-  //  .form {
-  //    display: flex;
-  //    flex-direction: column;
-  //
-  //    button {
-  //      margin-top: 1rem;
-  //      padding: 1rem;
-  //      border-radius: 0.5rem;
-  //      border: 1px solid #002C23;
-  //      background-color: #FFFFFF;
-  //      color: #002C23;
-  //      text-decoration: none;
-  //      text-align: center;
-  //      cursor: pointer;
-  //
-  //      &:hover {
-  //        background-color: #002C23;
-  //        color: #FFFFFF;
-  //        border-color: #FFFFFF;
-  //      }
-  //    }
-  //
-  //    textarea {
-  //      resize: vertical;
-  //      height: 10rem;
-  //    }
-  //
-  //    textarea, input {
-  //      padding: 1rem;
-  //      border: 1px solid #002C23;
-  //      color: #002C23;
-  //      font-size: 1rem;
-  //
-  //      &:focus-visible {
-  //        outline: #00FFCE solid 1px;
-  //        outline-offset: -1px;
-  //      }
-  //    }
-  //
-  //    :nth-child(1) {
-  //      border-radius: 0.5rem 0.5rem 0 0;
-  //    }
-  //
-  //    :nth-child(3) {
-  //      border-radius: 0 0 0.5rem 0.5rem;
-  //    }
-  //  }
-  //}
-
 
   @media (min-width: 768px) {
     //Small screens, laptops

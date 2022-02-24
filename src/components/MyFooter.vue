@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-footer{
+footer {
   height: 5rem;
 
   display: flex;
@@ -30,7 +30,7 @@ footer{
   align-items: center;
   justify-content: space-evenly;
 
-  .links{
+  .links {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -42,12 +42,13 @@ footer{
     font-size: 1rem;
     width: 100%;
 
-    a{
+    a {
 
-    color: #FFFFFF;
+      color: #FFFFFF;
     }
   }
-  .msg{
+
+  .msg {
     font-size: 0.8rem;
 
     display: flex;

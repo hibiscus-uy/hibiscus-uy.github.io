@@ -27,7 +27,7 @@ export default {
   },
   computed: {
     faded() { return this.scroll > 70 },
-    light() { return this.scroll > 70 }
+    light() { return this.scroll > 100 }
   },
   beforeMount() {
     window.addEventListener('scroll', this.handleScroll)
@@ -58,7 +58,8 @@ nav {
   a {
     display: none;
   }
-  .logo{
+
+  .logo {
     height: 6rem;
   }
 
@@ -75,7 +76,7 @@ nav {
     margin-left: auto;
     padding: 0 2rem;
 
-    &.light{
+    &.light {
       background-color: #FFF;
     }
   }
@@ -83,7 +84,7 @@ nav {
 
 @media screen and (max-width: 767px) {
   &.responsive {
-    background-color:  #000;
+    background-color: #000;
     height: 100vh;
   }
 
@@ -92,15 +93,15 @@ nav {
     margin-bottom: 2rem;
     margin-left: 2rem;
 
-    &:nth-child(3){
+    &:nth-child(3) {
       margin-top: 3rem;
     }
 
-    &:nth-child(5){
+    &:nth-child(5) {
       display: none;
     }
 
-    &:not(:nth-child(2)){
+    &:not(:nth-child(2)) {
       font-size: 3rem;
     }
   }
@@ -127,7 +128,7 @@ nav {
       top: 0;
     }
 
-    .menu{
+    .menu {
       display: flex;
       justify-content: space-around;
       align-items: center;

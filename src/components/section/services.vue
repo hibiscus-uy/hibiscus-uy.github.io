@@ -36,14 +36,14 @@ export default {
 
 <style lang="scss" scoped>
 #services {
-  padding-top: 4rem;
   background-color: #FFFFFF;
   color: #000000;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  h1,h3{
+  h1, h3 {
     font-weight: 400;
     text-align: center;
   }
@@ -67,7 +67,7 @@ export default {
       align-items: center;
       padding: 2rem;
 
-      img{
+      img {
         height: 10rem;
         padding-bottom: 2rem;
       }
@@ -89,6 +89,7 @@ export default {
 
     .content {
       flex-direction: row;
+
       .card {
         flex: 50%;
       }

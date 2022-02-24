@@ -54,7 +54,7 @@ export default {
       margin-bottom: 3rem;
       font-weight: 300;
 
-      &:first-child{
+      &:first-child {
         font-weight: 700;
       }
     }
@@ -79,8 +79,8 @@ export default {
       width: auto;
     }
 
-    .content{
-      p{
+    .content {
+      p {
         width: 50%;
       }
     }

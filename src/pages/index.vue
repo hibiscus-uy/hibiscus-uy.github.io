@@ -3,8 +3,7 @@
     <Navigation/>
     <section-home/>
     <section-services/>
-    <!--        <section-skills/>-->
-    <!--        <section-experience/>-->
+    <section-about/>
     <section-contact/>
     <my-footer/>
   </div>
