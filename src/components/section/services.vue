@@ -70,6 +70,8 @@ export default {
       img {
         height: 10rem;
         padding-bottom: 2rem;
+
+        user-select: none;
       }
     }
   }

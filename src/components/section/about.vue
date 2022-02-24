@@ -5,10 +5,9 @@
     <h1>About us</h1>
 
     <div class="container">
-      <p>We are a team of geeks with a good pragmatic approach centered in the customer experience of IT assets.</p>
-      <p>Our background comes from multinational enterprises with a entrepreneur skill set, always looking to experience
-        something new, curious minds eager to deliver fast increments that makes a difference to our customers.</p>
-      <p>If you are looking for a partner to grow your business you can count on us!</p>
+      <p>We are a team of geeks with a good pragmatic approach centred in the customer experience of IT assets.</p>
+      <p>Our background comes from multinational enterprises with an entrepreneur skill set, always looking to experience something new, curious minds eager to deliver fast increments that makes a difference to our customers.</p>
+      <p>If you are looking for a partner to grow your business, you can count on us!</p>
 
       <div class="members">
         <div class="card">
@@ -30,7 +29,7 @@
             <img alt="linkedin" src="@/assets/img/hibiscus_linkedin_icon.svg"></a>
           <p>10+ years of experience in IT, passionate troubleshooter, handling wide range of technologies. Most
             experience comes from a national telecom company, multinational companies like BASF and Perficient. Working
-            with on-premise and cloud architectures, micro services oriented, with German or American customers.</p>
+            with on-premise and cloud architectures, microservices oriented, with German or American customers.</p>
         </div>
 
         <div class="card">
@@ -75,6 +74,9 @@ export default {
 
   .container {
     text-align: center;
+    p{
+      padding: 0 3rem;
+    }
 
     .members {
       display: flex;
@@ -90,6 +92,8 @@ export default {
           border-radius: 100%;
           max-width: 8rem;
           margin-bottom: 1rem;
+
+          user-select: none;
         }
       }
     }

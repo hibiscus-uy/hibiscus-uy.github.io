@@ -23,6 +23,16 @@ export default {
 
 <style scoped lang="scss">
 footer {
+  background-color: #1E1E1E;
+  color: #F8F8F8;
+
+  .msg::selection,
+  .msg img::selection,
+  .links a::selection {
+    background-color: #F8F8F8;
+    color: #1E1E1E;
+  }
+
   height: 5rem;
 
   display: flex;

@@ -6,7 +6,7 @@
 
     <div class="container content">
         <p>We are a human-centered software products developer team.</p>
-        <p>Tell us about your goals and lets take the journey together to make them real!</p>
+        <p>Tell us about your goals and let's take the journey together to make them real!</p>
         <nuxt-link class="btn-contact" :to="{ path: '/', hash:'#contact'}">Contact us</nuxt-link>
     </div>
 
@@ -33,7 +33,13 @@ export default {
 <style scoped lang="scss">
 #home {
   background-color: #1E1E1E;
-  color: #FFF;
+  color: #F8F8F8;
+
+  .content p::selection {
+    background-color: #F8F8F8;
+    color: #1E1E1E;
+  }
+
 
   #background_1 {
     position: absolute;
@@ -41,6 +47,8 @@ export default {
     height: 100%;
     width: 100%;
     object-fit: cover;
+
+    user-select: none;
   }
 
   .content {

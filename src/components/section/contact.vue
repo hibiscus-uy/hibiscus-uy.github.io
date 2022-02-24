@@ -3,7 +3,7 @@
 
     <img id="hibiscus_background_2" alt="hibiscus_background_2" src="@/assets/img/hibiscus_background_2.svg">
     <div class="title">
-      <p>Lets create together</p>
+      <p>Let's create together</p>
 
       <p>Contact us</p>
     </div>
@@ -57,6 +57,8 @@ export default {
     height: 100%;
     width: 100%;
     object-fit: cover;
+
+    user-select: none;
   }
 
   .title {
@@ -118,6 +120,11 @@ export default {
         &::placeholder {
           color: #00FFCF80;
           opacity: 1; /* Firefox */
+        }
+
+        &::selection{
+          color: #00FFCF;
+          background: #FF174580;
         }
       }
 

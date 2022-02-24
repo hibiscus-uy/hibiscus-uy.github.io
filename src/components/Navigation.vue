@@ -132,6 +132,10 @@ nav {
       display: flex;
       justify-content: space-around;
       align-items: center;
+
+      &.light {
+        background-color: inherit;
+      }
     }
   }
 }
