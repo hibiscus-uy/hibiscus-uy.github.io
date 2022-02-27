@@ -88,6 +88,7 @@ gtag('config', 'G-MND0S9FGM9');`
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extractCSS: true,
   },
 
   generate: { fallback: '404.html' },

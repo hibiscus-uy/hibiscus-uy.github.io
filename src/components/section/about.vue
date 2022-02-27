@@ -1,7 +1,7 @@
 <template>
   <section id="about">
 
-    <h3>What we do</h3>
+    <h3>Who we are</h3>
     <h1>About us</h1>
 
     <div class="container">
