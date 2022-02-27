@@ -40,9 +40,8 @@
             <img alt="linkedin" src="@/assets/img/hibiscus_linkedin_icon.svg"></a>
           <p>
             +5 years on designing experiences.
-            In love with interactive product development.
-            Catching what people really need.
-            Most experience come from North American costumers and Israel,
+            In love with interactive product development and catching what people really need.
+            Most experience come from North American and Israeli costumers,
             working on requirement elicitation, landing ideas and designing user interfaces.
           </p>
         </div>
