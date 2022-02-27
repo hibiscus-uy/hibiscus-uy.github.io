@@ -33,7 +33,7 @@ export default {
     }
   }, methods: {
     submit() {
-      const data = {name: this.name, _replyto: this.mail, message: this.msg}
+      const data = {name: this.name, _replyto: this.mail, contact: this.mail, message: this.msg}
       this.$axios.post(`https://formspree.io/f/meqngzzd`, data)
         .then(this.clear)
     },
@@ -110,7 +110,8 @@ export default {
 
         &:focus,
         &:focus-visible {
-          box-shadow: 0 0 5px 3px #ff1745;
+          border: 1px solid #FF1745;
+          box-shadow: 0 0 5px 3px #FF1745;
         }
 
         &::placeholder {
