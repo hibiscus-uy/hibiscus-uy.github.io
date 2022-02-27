@@ -17,7 +17,7 @@
           <a href="https://linkedin.com/in/pablofraga/" target="_blank">
             <img alt="linkedin" src="@/assets/img/hibiscus_linkedin_icon.svg"></a>
           <p>22+ years of experience in IT, passionate programmer with strong skills in architecture and management,
-            most of his experience comes from multinational companies like IBM, Pernod Ricard, Basf and Verifone,
+            most of experience comes from multinational companies like IBM, Pernod Ricard, Basf and Verifone,
             running projects that form part of our daily lives as consumers of the IT assets.</p>
         </div>
 
@@ -38,9 +38,13 @@
           <span>Yanina Viera</span>
           <a href="https://linkedin.com/in/yaninaviera/" target="_blank">
             <img alt="linkedin" src="@/assets/img/hibiscus_linkedin_icon.svg"></a>
-          <p><b>Description in progress:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar posuere suscipit. Nullam
-            condimentum, diam eu accumsan pulvinar, risus nulla malesuada elit, in blandit nibh quam nec dolor. Mauris
-            varius et dui sit amet consectetur.</p>
+          <p>
+            +5 years on designing experiences.
+            In love with interactive product development.
+            Catching what people really need.
+            Most experience come from North American costumers and Israel,
+            working on requirement elicitation, landing ideas and designing user interfaces.
+          </p>
         </div>
       </div>
     </div>
