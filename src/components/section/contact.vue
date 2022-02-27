@@ -95,7 +95,10 @@ export default {
 
       input {
         margin-bottom: 1rem;
-        border-radius: 0;
+      }
+
+      input[name="name"] {
+        border-radius: 1rem 0 0 0;
       }
 
       textarea, input {
@@ -107,8 +110,7 @@ export default {
 
         &:focus,
         &:focus-visible {
-          outline: #FF1744 solid 2px;
-          outline-offset: -2px;
+          box-shadow: 0 0 5px 3px #ff1745;
         }
 
         &::placeholder {
@@ -119,15 +121,6 @@ export default {
         &::selection {
           color: #00FFCF;
           background: #FF174580;
-        }
-      }
-
-      input[name="name"] {
-        border-radius: 1rem 0 0 0;
-
-        &:focus,
-        &:focus-visible {
-          border-radius: 1rem 0 0 0;
         }
       }
 
@@ -165,6 +158,5 @@ export default {
       padding-left: 10rem;
     }
   }
-
 }
 </style>
