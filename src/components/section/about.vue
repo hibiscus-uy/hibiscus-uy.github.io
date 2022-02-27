@@ -17,7 +17,7 @@
           <a href="https://linkedin.com/in/pablofraga/" target="_blank">
             <img alt="linkedin" src="@/assets/img/hibiscus_linkedin_icon.svg"></a>
           <p>22+ years of experience in IT, passionate programmer with strong skills in architecture and management,
-            most of experience comes from multinational companies like IBM, Pernod Ricard, Basf and Verifone,
+            most experience comes from multinational companies like IBM, Pernod Ricard, Basf and Verifone,
             running projects that form part of our daily lives as consumers of the IT assets.</p>
         </div>
 
