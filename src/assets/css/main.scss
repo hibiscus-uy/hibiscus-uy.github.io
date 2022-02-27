@@ -41,9 +41,11 @@ body, html{
   margin: 0;
 }
 
-h1, h2, h3{
-  margin: 0;
-  font-weight: 700;
+h1, h2, h3, h4, h5, h6{
+  font-weight: 400;
+  text-align: center;
+
+  margin: 0 0 1rem;
 }
 
 h1 {
@@ -112,12 +114,6 @@ section{
   min-height: 95vh;
   padding:4rem 0;
   overflow: hidden;
-
-
-  &:last-child{
-    min-height: 100vh;
-  }
-
 }
 
 
@@ -128,4 +124,14 @@ input, textarea {
   &:invalid { box-shadow: none; }
 
   &:focus { border: 1px solid; }
+}
+
+.btn {
+  padding: 1rem 6rem;
+  border-radius: 4rem;
+  background: linear-gradient(275.68deg, #FF1744 -54.94%, #FF1744 -14.15%, #FF616F 34.87%, #5CC6AC 105.61%, #00FFCF 144.78%);
+  color: #FFFFFF !important;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5rem;
 }

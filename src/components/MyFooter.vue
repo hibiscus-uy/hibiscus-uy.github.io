@@ -2,11 +2,11 @@
 <footer>
   <div class="links">
     <nuxt-link :class="{'active':$route.hash==='#home'}" :to="{ path: '/', hash:'#home'}">Home</nuxt-link>
-    <span>-</span>
+    <span>·</span>
     <nuxt-link :class="{'active':$route.hash==='#services'}" :to="{ path: '/', hash:'#services'}">Services</nuxt-link>
-    <span>-</span>
+    <span>·</span>
     <nuxt-link :class="{'active':$route.hash==='#about'}" :to="{ path: '/', hash:'#about'}">About us</nuxt-link>
-    <span>-</span>
+    <span>·</span>
     <nuxt-link :class="{'active':$route.hash==='#contact'}" :to="{ path: '/', hash:'#contact'}">Contact us</nuxt-link>
   </div>
   <div class="msg">
@@ -33,12 +33,14 @@ footer {
     color: #1E1E1E;
   }
 
-  height: 5rem;
+  height: 7rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   .links {
     display: flex;

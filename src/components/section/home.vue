@@ -3,11 +3,10 @@
 
     <img id="background_1" alt="background_1" src="@/assets/img/hibiscus_background_1.svg">
 
-
     <div class="container content">
         <p>We are a human-centered software products developer team.</p>
         <p>Tell us about your goals and let's take the journey together to make them real!</p>
-        <nuxt-link class="btn-contact" :to="{ path: '/', hash:'#contact'}">Contact us</nuxt-link>
+        <nuxt-link class="btn" :to="{ path: '/', hash:'#contact'}">Contact us</nuxt-link>
     </div>
 
   </section>
@@ -49,13 +48,14 @@ export default {
     object-fit: cover;
 
     user-select: none;
+    pointer-events: none;
   }
 
   .content {
     position: relative;
 
     margin-top: 15rem;
-    padding: 1rem 3rem 1rem 1rem;
+    padding: 1rem 3rem 1rem 3rem;
 
     p {
       font-size: 2rem;
@@ -67,15 +67,6 @@ export default {
       }
     }
 
-    .btn-contact {
-      padding: 1rem 6rem;
-      border-radius: 4rem;
-      background: linear-gradient(275.68deg, #FF1744 -54.94%, #FF1744 -14.15%, #FF616F 34.87%, #5CC6AC 105.61%, #00FFCF 144.78%);
-      color: #FFFFFF;
-      text-decoration: none;
-      text-align: center;
-      font-size: 1.5rem;
-    }
   }
 
   @media screen and (min-width: 768px) {
@@ -89,7 +80,7 @@ export default {
 
     .content {
       p {
-        width: 50%;
+        width: 60%;
       }
     }
   }

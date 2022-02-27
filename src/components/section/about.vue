@@ -65,16 +65,6 @@ export default {
   flex-direction: column;
   align-items: center;
 
-  h1, h3 {
-    font-weight: 400;
-    text-align: center;
-  }
-
-  h1 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
   .container {
     text-align: center;
 

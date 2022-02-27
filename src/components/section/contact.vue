@@ -2,12 +2,9 @@
   <section id="contact">
 
     <img id="hibiscus_background_2" alt="hibiscus_background_2" src="@/assets/img/hibiscus_background_2.svg">
-    <div class="title">
-      <p>Let's create together</p>
 
-      <p>Contact us</p>
-    </div>
-
+    <h3>Let's create together</h3>
+    <h1>Contact us</h1>
 
     <div class="container content">
       <div class="form">
@@ -59,28 +56,14 @@ export default {
     object-fit: cover;
 
     user-select: none;
+    pointer-events: none;
   }
 
-  .title {
-    position: relative;
-    text-align: center;
 
-    p {
-      font-size: 1.5rem;
-      line-height: 4rem;
-      font-style: normal;
-      font-weight: normal;
-      margin: 0;
-    }
-
-    p + p {
-      font-size: 3rem;
-      margin-bottom: 5rem;
-    }
-  }
 
   .content {
     position: relative;
+    padding-top: 5rem;
     padding-right: 5rem;
     padding-left: 5rem;
 
@@ -111,7 +94,7 @@ export default {
         &:focus,
         &:focus-visible {
           border: 1px solid #FF1745;
-          box-shadow: 0 0 5px 3px #FF1745;
+          box-shadow: 0 0 0.2rem 0 #FF1745;
         }
 
         &::placeholder {

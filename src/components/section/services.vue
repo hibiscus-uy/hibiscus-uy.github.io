@@ -24,7 +24,7 @@
     </div>
 
 
-    <nuxt-link class="btn-contact" :to="{ path: '/', hash:'#contact'}">Tell us about your idea</nuxt-link>
+    <nuxt-link class="btn" :to="{ path: '/', hash:'#contact'}">Tell us about your idea</nuxt-link>
   </section>
 </template>
 
@@ -42,16 +42,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  h1, h3 {
-    font-weight: 400;
-    text-align: center;
-  }
-
-  h1 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
 
   .content {
     padding-top: 4rem;
@@ -74,17 +64,6 @@ export default {
         user-select: none;
       }
     }
-  }
-
-
-  .btn-contact {
-    padding: 1rem 6rem;
-    border-radius: 4rem;
-    background: linear-gradient(275.68deg, #FF1744 -54.94%, #FF1744 -14.15%, #FF616F 34.87%, #5CC6AC 105.61%, #00FFCF 144.78%);
-    color: #FFFFFF;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.5rem;
   }
 
   @media screen and (min-width: 768px) {
