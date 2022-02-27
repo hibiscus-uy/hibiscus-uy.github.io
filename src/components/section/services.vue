@@ -24,13 +24,13 @@
     </div>
 
 
-    <nuxt-link class="btn" :to="{ path: '/', hash:'#contact'}">Tell us about your idea</nuxt-link>
+    <nuxt-link class="btn main" :to="{ path: '/', hash:'#contact'}">Tell us about your idea</nuxt-link>
   </section>
 </template>
 
 <script>
 export default {
-  name: "experience"
+  name: "services"
 }
 </script>
 

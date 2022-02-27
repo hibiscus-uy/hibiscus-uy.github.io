@@ -12,7 +12,7 @@
         <input v-model="mail" placeholder="e-mail" name="email" type="email">
         <textarea v-model="msg" placeholder="Message"/>
         <div class="right">
-          <button @click="submit">Send</button>
+          <button class="btn" @click="submit">Send</button>
         </div>
       </div>
     </div>
@@ -111,23 +111,12 @@ export default {
       .right {
         text-align: right;
 
-        button {
+        .btn{
           padding: 0.5rem;
-          width: 10rem;
-          background: #00FFCF;
-          border: none;
           border-radius: 0 0 1rem 1rem;
-          font-size: 1rem;
-          font-weight: 500;
-
-          cursor: pointer;
-
-          &:active,
-          &:hover {
-            background: linear-gradient(275.68deg, #FF1744 -54.94%, #FF1744 -14.15%, #FF616F 34.87%, #5CC6AC 105.61%, #00FFCF 144.78%);
-            color: #FFFFFF;
-            border-color: #FFFFFF;
-          }
+          width: 10rem;
+            font-size: 1rem;
+            font-weight: 500;
         }
       }
 

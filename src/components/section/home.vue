@@ -6,7 +6,7 @@
     <div class="container content">
         <p>We are a human-centered software products developer team.</p>
         <p>Tell us about your goals and let's take the journey together to make them real!</p>
-        <nuxt-link class="btn" :to="{ path: '/', hash:'#contact'}">Contact us</nuxt-link>
+        <nuxt-link class="btn main" :to="{ path: '/', hash:'#contact'}">Contact us</nuxt-link>
     </div>
 
   </section>

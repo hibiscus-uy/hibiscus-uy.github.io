@@ -58,12 +58,16 @@ h3 {
   font-size: 1.3rem;
 }
 
+img{
+  user-select: none;
+  pointer-events: none;
+}
+
 .container{
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
-
 
 header,
 nav {
@@ -127,11 +131,24 @@ input, textarea {
 }
 
 .btn {
-  padding: 1rem 6rem;
+  padding: 1rem;
   border-radius: 4rem;
+  border: none;
   background: linear-gradient(275.68deg, #FF1744 -54.94%, #FF1744 -14.15%, #FF616F 34.87%, #5CC6AC 105.61%, #00FFCF 144.78%);
   color: #FFFFFF !important;
   text-decoration: none;
   text-align: center;
-  font-size: 1.5rem;
+  cursor: pointer;
+
+  &:active,
+  &:hover {
+    background: #00FFCF;
+    color: #1E1E1E !important;
+    border: none;
+  }
+
+  &.main{
+    padding: 1rem 6rem;
+    font-size: 1.5rem;
+  }
 }

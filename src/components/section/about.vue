@@ -92,6 +92,7 @@ export default {
           margin-bottom: 1rem;
 
           user-select: none;
+          pointer-events: none;
         }
       }
     }
