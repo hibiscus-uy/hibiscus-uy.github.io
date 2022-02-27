@@ -12,13 +12,6 @@
     background-color: #1E1E1E;
     color: #F8F8F8;
   }
-}
-
-body, html{
-  height: 100%;
-  background-color: #F8F8F8;
-  color: #1E1E1E;
-  margin: 0;
 
   &::-webkit-scrollbar {
     width: 5px;
@@ -36,6 +29,13 @@ body, html{
   &::-webkit-scrollbar-track {
     box-shadow: 0 0 1px #c4c4c4 inset;
   }
+}
+
+body, html{
+  height: 100%;
+  background-color: #F8F8F8;
+  color: #1E1E1E;
+  margin: 0;
 }
 
 h1, h2, h3{

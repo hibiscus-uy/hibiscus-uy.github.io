@@ -95,14 +95,7 @@ export default {
 
       input {
         margin-bottom: 1rem;
-
-        &[name="name"] {
-          border-radius: 1rem 0 0 0;
-
-          &:focus-visible {
-            border-radius: 1rem 0 0 0;
-          }
-        }
+        border-radius: 0;
       }
 
       textarea, input {
@@ -112,6 +105,7 @@ export default {
         color: #00FFCF;
         font-size: 1rem;
 
+        &:focus,
         &:focus-visible {
           outline: #FF1744 solid 2px;
           outline-offset: -2px;
@@ -125,6 +119,15 @@ export default {
         &::selection {
           color: #00FFCF;
           background: #FF174580;
+        }
+      }
+
+      input[name="name"] {
+        border-radius: 1rem 0 0 0;
+
+        &:focus,
+        &:focus-visible {
+          border-radius: 1rem 0 0 0;
         }
       }
 
