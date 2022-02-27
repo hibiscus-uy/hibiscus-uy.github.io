@@ -9,7 +9,7 @@
       </a>
       <nuxt-link @click.native='handler' :class="{'active':$route.hash==='#home'}" :to="{ path: '/', hash:'#home'}">Home</nuxt-link>
       <nuxt-link @click.native='handler' :class="{'active':$route.hash==='#services'}" :to="{ path: '/', hash:'#services'}">Services</nuxt-link>
-      <nuxt-link @click.native='handler' :to="{ path: '/'}"><img alt="hibiscus_menu_icon" src="@/assets/img/hibiscus_logo_dark_m.png"></nuxt-link>
+      <nuxt-link @click.native='handler' :to="{ path: '/'}"><img alt="hibiscus_menu_icon" src="@/assets/img/hibiscus_logo_dark.svg"></nuxt-link>
       <nuxt-link @click.native='handler' :class="{'active':$route.hash==='#about'}" :to="{ path: '/', hash:'#about'}">About us</nuxt-link>
       <nuxt-link @click.native='handler' :class="{'active':$route.hash==='#contact'}" :to="{ path: '/', hash:'#contact'}">Contact us</nuxt-link>
     </div>
@@ -61,6 +61,8 @@ nav {
 
   .logo {
     height: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .icon {
@@ -132,6 +134,12 @@ nav {
       display: flex;
       justify-content: space-around;
       align-items: center;
+
+    [alt='hibiscus_menu_icon']{
+      width: 10rem;
+      padding: 1rem;
+
+    }
 
       &.light {
         background-color: inherit;

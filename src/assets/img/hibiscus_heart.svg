@@ -1,10 +1,15 @@
-<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M10.7591 2.77601C9.9507 6.27679 7.6344 6.63911 6.10911 9.63797C5.74344 9.13217 3.09655 7.67945 2.66389 7.19892C1.2643 5.64447 1.58149 6.4199 0.699158 4.30352C0.198331 3.10224 0.646246 -0.257812 2.3963 0.109806C3.35397 0.310975 3.64168 0.546191 4.35271 1.24959C4.74478 1.65311 5.13701 2.2003 5.3891 2.24065C5.4704 2.25367 5.57324 2.24018 5.60575 2.18973C6.04166 1.5132 6.07048 1.44501 6.76964 0.766838C7.1576 0.292539 7.36221 0.123387 8.24886 0.0178855C9.57395 -0.139783 11.1541 1.06585 10.7591 2.77601Z" fill="url(#paint0_linear_148_1902)"/>
-<defs>
-<linearGradient id="paint0_linear_148_1902" x1="6.4998" y1="9.74893" x2="5.44775" y2="2.41275" gradientUnits="userSpaceOnUse">
-<stop offset="0.0589178" stop-color="#FF1744"/>
-<stop offset="0.508919" stop-color="#FF1744"/>
-<stop offset="0.93203" stop-color="#FF616F"/>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 10.3 9.6" style="enable-background:new 0 0 10.3 9.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="6.1562" y1="2.2745" x2="5.1042" y2="9.6107" gradientTransform="matrix(1 0 0 -1 0 12)">
+	<stop  offset="5.891781e-02" style="stop-color:#FF1744"/>
+	<stop  offset="0.5089" style="stop-color:#FF1744"/>
+	<stop  offset="0.932" style="stop-color:#FF616F"/>
 </linearGradient>
-</defs>
+<path class="st0" d="M10.3,2.8C9.4,6.3,7.1,6.6,5.6,9.6c-0.4-0.5-3-2-3.4-2.4c-1.4-1.6-1.1-0.8-2-2.9c-0.5-1.2-0.1-4.6,1.7-4.2
+	c1,0.2,1.2,0.4,2,1.1c0.4,0.4,0.8,1,1,1c0.1,0,0.2,0,0.2-0.1c0.4-0.7,0.5-0.7,1.2-1.4C6.7,0.3,6.9,0.1,7.7,0
+	C9.1-0.1,10.6,1.1,10.3,2.8z"/>
 </svg>

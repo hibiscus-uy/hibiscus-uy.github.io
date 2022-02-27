@@ -65,6 +65,14 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 11rem;
+
+    img {
+      height: 1rem;
+    }
+
+    #hibiscus {
+      height: 2rem;
+    }
   }
 }
 </style>
