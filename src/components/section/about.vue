@@ -57,7 +57,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 #about {
   background-color: #F8F8F8;
   color: #000000;

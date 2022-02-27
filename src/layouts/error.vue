@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .error{
   display: flex;
   justify-content: center;
