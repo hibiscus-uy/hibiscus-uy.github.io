@@ -10,16 +10,6 @@
       <p>If you are looking for a partner to grow your business, you can count on us!</p>
 
       <div class="members">
-        <div class="card">
-          <img class="profile-pic" alt="Pablo Fraga"
-               src="https://media-exp1.licdn.com/dms/image/C4D03AQG6XVV1H839yw/profile-displayphoto-shrink_200_200/0/1625687951480?e=1651104000&v=beta&t=9FjgeCihsUA_E2_08tKccQ9EBuH0dbwuK-J6PborX44">
-          <span>Pablo Fraga</span>
-          <a href="https://linkedin.com/in/pablofraga/" target="_blank">
-            <img alt="linkedin" src="@/assets/img/hibiscus_linkedin_icon.svg"></a>
-          <p>22+ years of experience in IT, passionate programmer with strong skills in architecture and management,
-            most experience comes from multinational companies like IBM, Pernod Ricard, Basf and Verifone,
-            running projects that form part of our daily lives as consumers of the IT assets.</p>
-        </div>
 
         <div class="card">
           <img class="profile-pic" alt="Germán Faller"
