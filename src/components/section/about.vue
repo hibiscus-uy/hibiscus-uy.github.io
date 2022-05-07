@@ -10,10 +10,18 @@
       <p>If you are looking for a partner to grow your business, you can count on us!</p>
 
       <div class="members">
+<!--        <div class="card">-->
+<!--          <img class="profile-pic" alt="Pablo Fraga" src="@/assets/img/profile/pablofraga.jpg">-->
+<!--          <span>Pablo Fraga</span>-->
+<!--          <a href="https://linkedin.com/in/pablofraga/" target="_blank">-->
+<!--            <img alt="linkedin" src="@/assets/img/hibiscus_linkedin_icon.svg"></a>-->
+<!--          <p>22+ years of experience in IT, passionate programmer with strong skills in architecture and management,-->
+<!--            most experience comes from multinational companies like IBM, Pernod Ricard, Basf and Verifone,-->
+<!--            running projects that form part of our daily lives as consumers of the IT assets.</p>-->
+<!--        </div>-->
 
         <div class="card">
-          <img class="profile-pic" alt="Germán Faller"
-               src="https://media-exp1.licdn.com/dms/image/C4D03AQE8cKyk3Dt7iQ/profile-displayphoto-shrink_200_200/0/1645488513112?e=1651104000&v=beta&t=4tofbolUdr-WEatedbs2a1aLh1s-jQBQuMnWVuEWJbs">
+          <img class="profile-pic" alt="Germán Faller" src="@/assets/img/profile/faller222.jpg">
           <span>Germán Faller</span>
           <a href="https://linkedin.com/in/faller222/" target="_blank">
             <img alt="linkedin" src="@/assets/img/hibiscus_linkedin_icon.svg"></a>
@@ -23,8 +31,7 @@
         </div>
 
         <div class="card">
-          <img class="profile-pic" alt="Yanina Viera"
-               src="https://media-exp1.licdn.com/dms/image/C4E03AQHbaou1U61PLg/profile-displayphoto-shrink_200_200/0/1639152053966?e=1651104000&v=beta&t=A0rEAbNmqa_5JMSxKGsFG2RBsxCTQoG7Hx5Sfn_thrc">
+          <img class="profile-pic" alt="Yanina Viera" src="@/assets/img/profile/yaninaviera.jpg">
           <span>Yanina Viera</span>
           <a href="https://linkedin.com/in/yaninaviera/" target="_blank">
             <img alt="linkedin" src="@/assets/img/hibiscus_linkedin_icon.svg"></a>
