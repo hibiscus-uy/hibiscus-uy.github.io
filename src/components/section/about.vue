@@ -21,7 +21,7 @@
 <!--        </div>-->
 
         <div class="card">
-          <img class="profile-pic" alt="Germán Faller" src="@/assets/img/profile/faller222.jpg">
+          <img class="profile-pic" alt="Germán Faller" src="@/assets/img/profile/faller222_2.jpg">
           <span>Germán Faller</span>
           <a href="https://linkedin.com/in/faller222/" target="_blank">
             <img alt="linkedin" src="@/assets/img/hibiscus_linkedin_icon.svg"></a>
